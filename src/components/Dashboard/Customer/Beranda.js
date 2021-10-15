@@ -3,6 +3,7 @@ import berandaImage from "../../../assets/img/beranda.png";
 import { Content, Header } from "antd/lib/layout/layout";
 import React from "react";
 import "./beranda.css";
+import { Link } from "react-router-dom";
 
 const Beranda = () => {
    return (
@@ -31,9 +32,11 @@ const Beranda = () => {
                   </p>
                </div>
                <div className="button__reset">
-                  <Button size="large" className="button_2">
-                     Buat Pengajuan KPR
-                  </Button>
+                  <Link to="/customer/pengajuan">
+                     <Button size="large" className="button_2">
+                        Buat Pengajuan KPR
+                     </Button>
+                  </Link>
                </div>
             </div>
          </Content>
